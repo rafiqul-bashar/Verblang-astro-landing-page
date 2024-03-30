@@ -1,0 +1,60 @@
+---
+import Button from "./button/Button.astro";
+import Content from "./Content.astro";
+import SectionContainer from "./SectionContainer.astro";
+import PageTitle from "./PageTitle.astro";
+import { Image } from "@astrojs/image/components";
+---
+
+<SectionContainer class="page-banner--container pt-16">
+    <SectionContainer
+        class="page-banner--inner-container wrap-lg mx-auto wrap-px z-10"
+    >
+        <div>
+            <PageTitle class="mx-auto text-center md:text-left" type="heavy">
+                We make you learn language easily!
+            </PageTitle>
+
+            <Content class="text-center md:text-left" alignment="center">
+                <p>
+                    We help you learn language easily, with small lessons ,
+                    you`ll earn points and unlock new levels while improving you
+                    rel world communications.
+                </p>
+            </Content>
+            <div class="mt-6 mb-16 text-center flex items-center space-x-4">
+                <input
+                    type="email"
+                    placeholder="Enter Your Email"
+                    class="bg-[#F5F5F5] py-2 px-4 md:px-8 rounded-full focus:outline-none text-sm md:text-base"
+                />
+                <Button href="#features" class="rounded-full">
+                    Get Started
+                </Button>
+            </div>
+        </div>
+        <div class="page-banner--image">
+            <Image
+                src={"/images/banner-top.png"}
+                width={815}
+                height={682}
+                alt={"Page Banner"}
+                format={"webp"}
+                class="mx-auto object-contain w-full"
+            />
+        </div>
+    </SectionContainer>
+    <div class="wrap-lg flex flex-col md:flex-row items-center gap-3 py-12">
+        <img
+            src={"/images/students-pic.png"}
+            alt={"Page Banner"}
+            class="scale-75"
+        />
+        <img
+            src={"/images/payment-logos.png"}
+            alt={"Page Banner"}
+            class="md:scale-75 md:ml-auto"
+        />
+    </div>
+    <div class="bg-gray-300 h-[1px] w-full"></div>
+</SectionContainer>

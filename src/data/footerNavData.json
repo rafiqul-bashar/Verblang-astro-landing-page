@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Template",
+        "items": [
+            {
+                "label": "Features",
+                "href": "#features"
+            },
+            {
+                "label": "Testimonials",
+                "href": "#testimonials"
+            },
+            {
+                "label": "FAQ",
+                "href": "#faq"
+            }
+        ]
+    },
+    {
+        "title": "Company",
+        "items": [
+            {
+                "label": "About",
+                "href": "#",
+                "target": "_blank"
+            },
+            {
+                "label": "Twitter",
+                "href": "#",
+                "target": "_blank"
+            },
+            {
+                "label": "Instagram",
+                "href": "#",
+                "target": "_blank"
+            },
+            {
+                "label": "About",
+                "href": "#",
+                "target": "_blank"
+            },
+            {
+                "label": "Twitter",
+                "href": "#",
+                "target": "_blank"
+            },
+            {
+                "label": "Instagram",
+                "href": "#",
+                "target": "_blank"
+            }
+        ]
+    }
+]

@@ -1,0 +1,76 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+
+import { Image } from "@astrojs/image/components";
+import Content from "./Content.astro";
+
+const { footerNavData } = Astro.props;
+---
+
+<footer id="footer" class="bg-white">
+    {/* Footer Links */}
+    <SectionContainer
+        class="footer--container wrap wrap-px relative z-10 mx-auto"
+    >
+        <div class="footer--content-container py-16">
+            <div class="grid items-center md:grid-cols-2">
+                <!-- logo endsw -->
+                <div class="">
+                    <a href="/">
+                        <Image
+                            src="/logo.png"
+                            alt="logo"
+                            class="h-6 w-auto"
+                            height={24}
+                            aspectRatio={7 / 1}
+                            format={"webp"}
+                        />
+                    </a>
+                    <Content class="py-4">
+                        Learning is a global training provider based across the
+                        UK that specialises in accrodited and bespoke training
+                        course.
+                    </Content>
+                </div>
+                <!-- footer Links here -->
+                <div class="">
+                    {
+                        footerNavData.map((footerLinks) => (
+                            <div class="grid h-full w-full grid-cols-3 pt-6 md:pt-0 md:text-center">
+                                {footerLinks.items.map((footerItem) => (
+                                    <p class="text-gray-700  font-medium transition-colors duration-300 hover:text-primary-200">
+                                        <a
+                                            href={footerItem.href}
+                                            target={footerItem.target}
+                                        >
+                                            {footerItem.label}
+                                        </a>
+                                    </p>
+                                ))}
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </div>
+    </SectionContainer>
+    {/* Footer Credits */}
+    <SectionContainer class="footer-credits relative z-10 w-full bg-gray-100">
+        <div class="wrap wrap-px py-6 mx-auto">
+            <p class="my-0">
+                © 2024 VerbLang. All rights reserved{" - "} |
+                <span class="font-normal">
+                    {" "}
+                    <a
+                        class="transition-colors duration-300 hover:text-gray-600"
+                        href="https://github.com/rafiqul-bashar"
+                        target="_blank"
+                    >
+                        rafiqul-bashar .
+                    </a>
+                </span>
+            </p>
+        </div>
+    </SectionContainer>
+    <div class="footer--background"></div>
+</footer>

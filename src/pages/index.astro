@@ -1,0 +1,76 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import HomeBanner from "@/components/HomeBanner.astro";
+import PageTitle from "@/components/PageTitle.astro";
+import Content from "@/components/Content.astro";
+---
+
+<Layout
+    title="Verblang - A landing page template 🚀"
+    description="Discover NutriTrack, the effortless way to plan your meals with the power of Notion. Streamline your nutrition journey and achieve your health goals with ease."
+>
+    <div class="main-wrapper bg-[#F3F5F8] relative z-10 pt-10">
+        <!-- top section -->
+
+        <HomeBanner />
+        <!-- second section -->
+        <SectionContainer class="wrap-lg wrap-px mx-auto py-16">
+            <PageTitle class="mx-auto text-center" type="default">
+                Learn a new language fun way
+            </PageTitle>
+
+            <Content class="text-center text-sm" alignment="center">
+                <p>
+                    Reach your language goals fast with the world`s #1 education
+                    app
+                </p>
+            </Content>
+            <img
+                src={"/images/map.png"}
+                alt={"Page Banner"}
+                class="md:w-1/2 pt-6 md:py-12 mx-auto"
+            />
+            <div class="w-full grid gap-4 grid-cols-3 mx-auto text-center">
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-semibold">4.5K+</h2>
+                    <p class="text-sm">Daily register from new user</p>
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-semibold">1.5K+</h2>
+                    <p class="text-sm">Language in the world</p>
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-semibold">1000+</h2>
+                    <p class="text-sm">Total learners in the world</p>
+                </div>
+            </div>
+        </SectionContainer>
+        <hr />
+        <!-- third section -->
+        <SectionContainer class="bg-primary-200 py-32">
+            <div class="wrap-lg wrap-px mx-auto">
+                <PageTitle class="mx-auto text-center" type="default">
+                    Learn a new language for free downlaod app Now!
+                </PageTitle>
+
+                <div
+                    class="flex flex-col justify-center md:flex-row md:items-center md:space-x-12 mx-auto w-fit space-y-4 md:space-y-0"
+                >
+                    <img
+                        src={"/images/app-store-logo.png"}
+                        alt={"Page Banner"}
+                        class="h-10 cursor-pointer"
+                    />
+                    <img
+                        src={"/images/play-store-logo.png"}
+                        alt={"Page Banner"}
+                        class="cursor-pointer h-10"
+                    />
+                </div>
+            </div>
+        </SectionContainer>
+    </div>
+    <!-- FAQ -->
+</Layout>
+<!-- Components Container -->

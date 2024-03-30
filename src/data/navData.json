@@ -1,0 +1,6 @@
+[
+    { "name": "Service", "to": "#features", "href": "/#" },
+    { "name": "Blog", "to": "#testimonials", "href": "/#" },
+    { "name": "About Us", "to": "#faq", "href": "/#" },
+    { "name": "Contact", "to": "#faq", "href": "/#" }
+]
